@@ -3,21 +3,29 @@
 **git --version** Para leer la version de git instalada.
 
 **git config --global user.name "nombre"** Para configurar usuario.
+
 **git config --global user.email "email@email.com"** Para configurar email.
 
 **cd** entrar a una carpeta.
+
 **cd ..** salir de una carpeta.
+
 **dir** (windows) - **ls** (mac/linux) Ver directorios.
+
 **clear** limpiar la consola.
 
 Click derecho dentro de la carpeta que deseamos sea nuestro repositorio, pulsar el boton git bash ó en mac se arrastra la carpeta a la consola.
 
 **git init** Para crear un repositorio. Sólo se hace una sola vez por proyecto.
+
 **git status** Nos da el status de nuestro repositorio.
+
 **git add .** Para guardar todos los cambios de todos los archivos en nuestro repositorio.
+
 **git commit -m "mensaje descriptivo"** Se utiliza cuando queremos guardar una version de nuestro proyecto.
 
 **git remote add [nombre-remoto] [link]** Vincular repositorio local con repositorio remoto.
+
 **git push -u [nombre-remoto] [rama]** Subir los archivos locales al repositorio remoto. En git al usar push por primera vez se usa "-u" que significa upstring, se usa solo la primera vez que hacemos push a un repositorio creado. Es decirle al sistema que estaremos subiendo todos los bytes necesarios para vincular ambos repositorios, el local y el remoto.
 
 **git clone [link del repositorio a clonar]** Para clonar un repositorio remoto.
@@ -27,7 +35,9 @@ Click derecho dentro de la carpeta que deseamos sea nuestro repositorio, pulsar 
 **git checkout -- [nombre de arichivo]** Revertir código escrito (no funciona despues de un git add).
 
 **git fetch [nombre-remoto]** Para descargar todos los datos del proyecto remoto que no tengo en el local.
+
 **git merge [nombre/rama]** Para mezclar los archivos del repositorio remoto con el repositorio local.
+
 **git pull [nombre-remoto] [rama]** Es un git fetch y git merge juntos.
 
 **git remote -v** Para ver remotos existentes.
