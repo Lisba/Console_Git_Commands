@@ -1,57 +1,57 @@
-<strong>COMANDOS BÁSICOS DE CÓNSOLA DE GIT:</strong>
+## COMANDOS BÁSICOS DE CÓNSOLA DE GIT:
 
-( git --version ): Para leer la version de git instalada.
+**git --version** Para leer la version de git instalada.
 
-( git config --global user.name "nombre" ): Para configurar usuario.
-( git config --global user.email "email@email.com" ): Para configurar email.
+**git config --global user.name "nombre"** Para configurar usuario.
+**git config --global user.email "email@email.com"** Para configurar email.
 
-cd : entrar a una carpeta
-cd .. : salir de una carpeta
-dir (windows) - ls (mac/linux) : Ver directorios
-clear : limpiar la consola
+**cd** entrar a una carpeta.
+**cd ..** salir de una carpeta.
+**dir** (windows) - **ls** (mac/linux) Ver directorios.
+**clear** limpiar la consola.
 
 Click derecho dentro de la carpeta que deseamos sea nuestro repositorio, pulsar el boton git bash ó en mac se arrastra la carpeta a la consola.
 
-( git init ): para crear un repositorio. Sólo se hace una sola vez por proyecto.
-( git status ): nos da el status de nuestro repositorio.
-( git add . ): para guardar todos los cambios de todos los archivos en nuestro repositorio.
-( git commit -m "mensaje descriptivo" ): Se utiliza cuando queremos guardar una version de nuestro proyecto.
+**git init** Para crear un repositorio. Sólo se hace una sola vez por proyecto.
+**git status** Nos da el status de nuestro repositorio.
+**git add .** Para guardar todos los cambios de todos los archivos en nuestro repositorio.
+**git commit -m "mensaje descriptivo"** Se utiliza cuando queremos guardar una version de nuestro proyecto.
 
-( git remote add [nombre-remoto] [link] ): Vincular repositorio local con repositorio remoto.
-( git push -u [nombre-remoto] [rama] ): Subir los archivos locales al repositorio remoto. En git al usar push por primera vez se usa "-u" que significa upstring, se usa solo la primera vez que hacemos push a un repositorio creado. Es decirle al sistema que estaremos subiendo todos los bytes necesarios para vincular ambos repositorios, el local y el remoto.
+**git remote add [nombre-remoto] [link]** Vincular repositorio local con repositorio remoto.
+**git push -u [nombre-remoto] [rama]** Subir los archivos locales al repositorio remoto. En git al usar push por primera vez se usa "-u" que significa upstring, se usa solo la primera vez que hacemos push a un repositorio creado. Es decirle al sistema que estaremos subiendo todos los bytes necesarios para vincular ambos repositorios, el local y el remoto.
 
-( git clone [link del repositorio a clonar] ) : Para clonar un repositorio remoto.
+**git clone [link del repositorio a clonar]** Para clonar un repositorio remoto.
 
-( git commit --amend ): Para reescribir el commit anterior (si se olvidó agregar algún archivo o error en el msj del commit).
+**git commit --amend** Para reescribir el commit anterior (si se olvidó agregar algún archivo o error en el msj del commit).
 
-( git checkout -- [nombre de arichivo] ): Revertir código escrito (no funciona despues de un git add).
+**git checkout -- [nombre de arichivo]** Revertir código escrito (no funciona despues de un git add).
 
-( git fetch [nombre-remoto] ) : Para descargar todos los datos del proyecto remoto que no tengo en el local.
-( git merge [nombre/rama]) : Para mezclar los archivos del repositorio remoto con el repositorio local.
-( git pull [nombre-remoto] [rama] ) : Es un git fetch y git merge juntos.
+**git fetch [nombre-remoto]** Para descargar todos los datos del proyecto remoto que no tengo en el local.
+**git merge [nombre/rama]** Para mezclar los archivos del repositorio remoto con el repositorio local.
+**git pull [nombre-remoto] [rama]** Es un git fetch y git merge juntos.
 
-( git remote -v ): Para ver remotos existentes.
+**git remote -v** Para ver remotos existentes.
 
-( git remote rename [old] [new] ): Cambiar el nombre-remoto del repositorio.
+**git remote rename [old] [new]** Cambiar el nombre-remoto del repositorio.
 
-( git remote set-url [name] [new-link] ): Cambiar a nuevo GitHub repositorio.
+**git remote set-url [name] [new-link]** Cambiar a nuevo GitHub repositorio.
 
-( git log ) : Para ver el historial de commits del repositorio.
+**git log** Para ver el historial de commits del repositorio.
 
-( git reset HEAD [archivo] ): para sacar un archivo del área de preparación (no entra en el commit).
+**git reset HEAD [archivo]** para sacar un archivo del área de preparación (no entra en el commit).
 
-( git reflog show ): Para mostrar el historial de head antes de hacer un pull.
+**git reflog show** Para mostrar el historial de head antes de hacer un pull.
 
-( git reset --hard HEAD~1 ): Para deshacer un commit borrando todos los cambios hechos en el.
+**git reset --hard HEAD~1** Para deshacer un commit borrando todos los cambios hechos en el.
 
-( git reset HEAD~1 ): Para deshacer el commit anterior y volver al estado antes del commit manteniendo las modificaciones hechas en el.
+**git reset HEAD~1** Para deshacer el commit anterior y volver al estado antes del commit manteniendo las modificaciones hechas en el.
 
-( git reset --keep HEAD@{1} ): para volver al ultimo estado de head si algo salió mal (ejemplo: antes de hacer un pull de fork).
+**git reset --keep HEAD@{1}** para volver al ultimo estado de head si algo salió mal (ejemplo: antes de hacer un pull de fork).
 
-Ignorar archivos: Se crea un archivo llamado .gitignore y adentro se mencionan todos los archivos y carpetas que deseo que git ignore (*.a) (/folder).
+Ignorar archivos: Se crea un archivo llamado **.gitignore** y adentro se mencionan todos los archivos y carpetas que deseo que git ignore ( ***.a** ) ( **/folder** ).
 
-Escribir: Si aparece el editor de texto bin en la terminar de git presiono i para insertar texto y :wq para aplicar el cambio ("w" de write y "q" de quit).
+Escribir: Si aparece el editor de texto bin en la terminar de git presiono **i** para insertar texto y **:wq** para aplicar el cambio ("w" de write y "q" de quit).
 
-( git add . ) == ( git add --all )
+**git add .** == **git add --all**
 
 En caso de que dos personas esten modificando un mismo archivo se genera un conflicto, se combinaran dos archivos, debemos solucionar el conflicto haciendo un git pull para traer los cambios y los veremos en nuestro archivo ligados.
