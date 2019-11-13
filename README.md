@@ -52,6 +52,8 @@ Click derecho dentro de la carpeta que deseamos sea nuestro repositorio, pulsar 
 
 **git reflog show** Para mostrar el historial de head antes de hacer un pull.
 
+**git reset --hard** Para deshacer todos los cambios de todos archivos en seguimiento, volviendo al estado del último commit.
+
 **git reset --hard HEAD~1** Para deshacer un commit borrando todos los cambios hechos en el.
 
 **git reset HEAD~1** Para deshacer el commit anterior y volver al estado antes del commit manteniendo las modificaciones hechas en el.
