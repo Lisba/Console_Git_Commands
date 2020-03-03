@@ -40,6 +40,8 @@ Click derecho dentro de la carpeta que deseamos sea nuestro repositorio, pulsar 
 
 **git pull [nombre-remoto] [rama]** Es un git fetch y git merge juntos.
 
+**git pull --allow-unrelated-histories [nombre-remoto] [rama]** Es un git fetch y git merge juntos cuando no permite hacer un git pull comun debido a unrelated histories (diferencias en el historial del repo local con el remoto).
+
 **git remote -v** Para ver remotos existentes.
 
 **git remote rename [old] [new]** Cambiar el nombre-remoto del repositorio.
