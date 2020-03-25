@@ -40,7 +40,8 @@ Click derecho dentro de la carpeta que deseamos sea nuestro repositorio, pulsar 
 
 **git pull [nombre-remoto] [rama]** Es un git fetch y git merge juntos.
 
-**git pull --allow-unrelated-histories [nombre-remoto] [rama]** Es un git fetch y git merge juntos cuando no permite hacer un git pull comun debido a unrelated histories (diferencias en el historial del repo local con el remoto).
+**git pull [nombre-remoto] [rama] --allow-unrelated-histories**
+** Es un git fetch y git merge juntos cuando no permite hacer un git pull comun debido al error: unrelated histories (diferencias en el historial del repo local con el remoto).
 
 **git remote -v** Para ver remotos existentes.
 
@@ -49,6 +50,18 @@ Click derecho dentro de la carpeta que deseamos sea nuestro repositorio, pulsar 
 **git remote set-url [name] [new-link]** Cambiar a nuevo GitHub repositorio.
 
 **git log** Para ver el historial de commits del repositorio.
+
+**git log --oneline** Para ver el historial con cada commit en una sola linea (mas limpio que git log).
+
+**git branch** Para ver las ramas disponibles y en cual estamos.
+
+**git branch [NewBranch-name]** Para crear una nueva rama.
+
+**git branch -d [branch-name]** Para borrar una rama.
+
+**git checkout [branch-name]** Para cambiar de rama.
+
+**git merge [nombreRama]** Para combinar una rama con otra (se debe estar en la master para combinar una rama a la master).
 
 **git reset HEAD [archivo]** para sacar un archivo del área de preparación (no entra en el commit).
 
