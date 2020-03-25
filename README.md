@@ -71,13 +71,13 @@ Click derecho dentro de la carpeta que deseamos sea nuestro repositorio, pulsar 
 
 **git reset --hard HEAD~1** Para deshacer un commit borrando todos los cambios hechos en el.
 
-**git reset HEAD~1** Para deshacer el commit anterior y volver al estado antes del commit manteniendo las modificaciones hechas en el.
+**git reset HEAD~1** Para deshacer el commit y volver al estado antes del commit manteniendo las modificaciones hechas en el.
 
 **git reset --keep HEAD@{1}** para volver al ultimo estado de head si algo salió mal (ejemplo: antes de hacer un pull de fork).
 
 Ignorar archivos: Se crea un archivo llamado **.gitignore** y adentro se mencionan todos los archivos y carpetas que deseo que git ignore ( ***.a** ) ( **/folder** ).
 
-Escribir: Si aparece el editor de texto bin en la terminar de git presiono **i** para insertar texto y **:wq** para aplicar el cambio ("w" de write y "q" de quit).
+Escribir: Si aparece el editor de texto bin en la terminal de git presiono **i** para insertar texto y **:wq** para aplicar el cambio ("w" de write y "q" de quit).
 
 **git add .** == **git add --all**
 
