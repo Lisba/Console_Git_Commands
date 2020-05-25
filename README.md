@@ -49,6 +49,8 @@ Click derecho dentro de la carpeta que deseamos sea nuestro repositorio, pulsar 
 
 **git remote set-url [name] [new-link]** Cambiar a nuevo GitHub repositorio.
 
+**git remote remove [name]** Eliminar el repositorio remoto.
+
 **git log** Para ver el historial de commits del repositorio.
 
 **git log --oneline** Para ver el historial con cada commit en una sola linea (mas limpio que git log).
