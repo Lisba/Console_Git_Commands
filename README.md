@@ -63,6 +63,10 @@ Click derecho dentro de la carpeta que deseamos sea nuestro repositorio, pulsar 
 
 **git merge [nombreRama]** Para combinar una rama con otra (se debe estar en la master para combinar una rama a la master).
 
+**git checkout [codigo del commit]** (Detached HEAD) Volver al estado de un commit anterior y revisar el codigo o hacer cambios experimentales.
+
+**git branch [nombre rama]  [codigo commit]** Guardar cambios hechos desde un detached HEAD en una rama nueva.
+
 **git reset HEAD [archivo]** para sacar un archivo del área de preparación (no entra en el commit).
 
 **git reflog show** Para mostrar el historial de head antes de hacer un pull.
