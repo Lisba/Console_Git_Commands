@@ -28,6 +28,8 @@ Click derecho dentro de la carpeta que deseamos sea nuestro repositorio, pulsar 
 
 **git push -u [nombre-remoto] [rama]** Subir los archivos locales al repositorio remoto. En git al usar push por primera vez se usa "-u" que significa upstring, se usa solo la primera vez que hacemos push a un repositorio creado. Es decirle al sistema que estaremos subiendo todos los bytes necesarios para vincular ambos repositorios, el local y el remoto.
 
+**git push [nombre-remoto]  [rama] -f** Forzar un push si el repo remoto va por delante del repo local. (Esto puede tener efectos destructivos y que se pierdan los commits que van por delante de nosotros).
+
 **git clone [link del repositorio a clonar]** Para clonar un repositorio remoto.
 
 **git commit --amend** Para reescribir el commit anterior (si se olvidó agregar algún archivo o error en el msj del commit).
