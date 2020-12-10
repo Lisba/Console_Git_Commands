@@ -2,20 +2,6 @@
 
 **git --version** Para leer la version de git instalada.
 
-**git config --global user.name "nombre"** Para configurar usuario.
-
-**git config --global user.email "email@email.com"** Para configurar email.
-
-**cd** entrar a una carpeta.
-
-**cd ..** salir de una carpeta.
-
-**dir** (windows) - **ls** (mac/linux) Ver directorios.
-
-**clear** limpiar la consola.
-
-Click derecho dentro de la carpeta que deseamos sea nuestro repositorio, pulsar el boton git bash ó en mac se arrastra la carpeta a la consola.
-
 **git init** Para crear un repositorio. Sólo se hace una sola vez por proyecto.
 
 **git status** Nos da el status de nuestro repositorio.
@@ -74,9 +60,9 @@ Click derecho dentro de la carpeta que deseamos sea nuestro repositorio, pulsar 
 
 **git checkout [codigo del commit]** (Detached HEAD) Volver al estado de un commit anterior y revisar el codigo o hacer cambios experimentales.
 
-**git switch -c [new-branch-name]** Para guardar cambios hechos desde un detached HEAD en una rama nueva.
-
 **git switch -** Para deshacer un Detached HEAD y volver al último commit hecho.
+
+**git switch -c [new-branch-name]** Para guardar cambios hechos desde un detached HEAD en una rama nueva.
 
 **git branch [nombre rama]  [codigo commit]** (Otra opción) Para guardar cambios hechos desde un detached HEAD en una rama nueva.
 
@@ -91,6 +77,24 @@ Click derecho dentro de la carpeta que deseamos sea nuestro repositorio, pulsar 
 **git reset HEAD~1** Para deshacer el commit y volver al estado antes del commit manteniendo las modificaciones hechas en el.
 
 **git reset --keep HEAD@{1}** para volver al ultimo estado de head si algo salió mal (ejemplo: antes de hacer un pull de fork).
+
+**git config --global user.name "nombre"** Para configurar usuario.
+
+**git config --global user.email "email@email.com"** Para configurar email.
+
+**git config --global --replace-all core.pager "less -iXFR"** Para evitar que desaparezca el resultado de git log (paginación) al cerrar less (paginador).
+
+**git config --global pager.branch false** Para mostrar el resultado de comandos como git branch por terminal y no en el editor (vim).
+
+**cd** entrar a una carpeta.
+
+**cd ..** salir de una carpeta.
+
+**dir** (windows) - **ls** (mac/linux) Ver directorios.
+
+**clear** limpiar la consola.
+
+Click derecho dentro de la carpeta que deseamos sea nuestro repositorio, pulsar el boton git bash ó en mac se arrastra la carpeta a la consola.
 
 Ignorar archivos: Se crea un archivo llamado **.gitignore** y adentro se mencionan todos los archivos y carpetas que deseo que git ignore ( ***.a** ) ( **/folder** ).
 
