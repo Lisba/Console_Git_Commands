@@ -42,8 +42,7 @@ Click derecho dentro de la carpeta que deseamos sea nuestro repositorio, pulsar 
 
 **git pull [nombre-remoto] [rama]** Es un git fetch y git merge juntos.
 
-**git pull [nombre-remoto] [rama] --allow-unrelated-histories**
-** Es un git fetch y git merge juntos cuando no permite hacer un git pull comun debido al error: unrelated histories (diferencias en el historial del repo local con el remoto).
+**git pull [nombre-remoto] [rama] --allow-unrelated-histories** Es un git fetch y git merge juntos cuando no permite hacer un git pull común debido al error: unrelated histories (diferencias en el historial del repo local con el remoto).
 
 **git remote -v** Para ver remotos existentes.
 
@@ -61,15 +60,25 @@ Click derecho dentro de la carpeta que deseamos sea nuestro repositorio, pulsar 
 
 **git branch [NewBranch-name]** Para crear una nueva rama.
 
-**git branch -d [branch-name]** Para borrar una rama.
+**git branch -d [branch-name]** Para borrar una rama que ya fue pusheada y mergeada con su repositorio remoto.
 
-**git checkout [branch-name]** Para cambiar de rama.
+**git branch -D [branch-name]** Para borrar una rama local aunque no haya sido pusheada y mergeada con su repositorio remoto.
+
+**git push origin --delete fix/authentication** Para borrar una rama de un repositorio remoto.
+
+**git switch [branch-name]** Para cambiar de rama.
+
+**git checkout [branch-name]** (Otra opción) Para cambiar de rama.
 
 **git merge [nombreRama]** Para combinar una rama con otra (se debe estar en la master para combinar una rama a la master).
 
 **git checkout [codigo del commit]** (Detached HEAD) Volver al estado de un commit anterior y revisar el codigo o hacer cambios experimentales.
 
-**git branch [nombre rama]  [codigo commit]** Guardar cambios hechos desde un detached HEAD en una rama nueva.
+**git switch -c [new-branch-name]** Para guardar cambios hechos desde un detached HEAD en una rama nueva.
+
+**git switch -** Para deshacer un Detached HEAD y volver al último commit hecho.
+
+**git branch [nombre rama]  [codigo commit]** (Otra opción) Para guardar cambios hechos desde un detached HEAD en una rama nueva.
 
 **git reset HEAD [archivo]** para sacar un archivo del área de preparación (no entra en el commit).
 
@@ -85,7 +94,7 @@ Click derecho dentro de la carpeta que deseamos sea nuestro repositorio, pulsar 
 
 Ignorar archivos: Se crea un archivo llamado **.gitignore** y adentro se mencionan todos los archivos y carpetas que deseo que git ignore ( ***.a** ) ( **/folder** ).
 
-Escribir: Si aparece el editor de texto bin en la terminal de git presiono **i** para insertar texto y **:wq** para aplicar el cambio ("w" de write y "q" de quit).
+Escribir: Si aparece el editor de texto vim en la terminal de git presiono **i** para insertar texto y **:wq** para aplicar el cambio ("w" de write y "q" de quit).
 
 **git add .** == **git add --all**
 
